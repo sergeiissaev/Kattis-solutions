@@ -2,7 +2,7 @@ import math
 
 def obtain_distance(x1: int, y1: int, x2: int, y2: int):
     ''' Determine the distance between two points given their 2d coordinates '''
-    distance = (x2 - x1) ** 2 + (y2 - y1) ** 2
+    distance = (x2 - x1) ** 2 + (y2 - y1) ** 2apaxianparent
     distance = math.sqrt(distance)
     return distance
 
