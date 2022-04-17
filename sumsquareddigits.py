@@ -3,12 +3,14 @@ class SumSquareDigits:
         self._loop_over_inputs()
 
     def _loop_over_inputs(self):
+        """Loop over the datasets"""
         for _ in range(int(input())):
             dataset, b, n = list(map(int, input().rstrip().split()))
             self._calculate_ssd(dataset, b, n)
 
     @staticmethod
     def _calculate_ssd(dataset: int, b: int, n: int) -> None:
+        """Deconstruct n using base b, sum the square of the remainders"""
         list_of_a_squared = list()
         while n > 0:
             a = n % b
