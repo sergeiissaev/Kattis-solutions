@@ -2,7 +2,6 @@ class Karte:
     def __init__(self):
         self.cards = input()
 
-
     def print_missing(self):
         history = list()
         suits = dict(P=0, H=0, K=0, T=0)
